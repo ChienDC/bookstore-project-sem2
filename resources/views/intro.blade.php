@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Intro file</h1>
+    <div>This is new content from Chien - updated - hehe</div>
     <div>This is new content from Huy - Updated</div>
 </body>
 </html>

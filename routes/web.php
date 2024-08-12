@@ -34,5 +34,6 @@ Route::view('/shop-list', 'main.shop-list');
 Route::view('/team', 'main.team');
 Route::view('/team-details', 'main.team-details');
 Route::view('/wishlist', 'main.wishlist');
-Route::view('/documentation', 'documentation.index');
-Route::view('/introduction', 'intro');
+
+Route::view('/documentation/index', 'documentation.index');
+

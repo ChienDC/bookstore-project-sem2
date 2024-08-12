@@ -5,6 +5,8 @@
 <img src="{{ asset('main/assets/img/logo.png') }}" alt="Logo">
 <script src="{{ asset('main/assets/js/app.js') }}"></script>
 
+
+
 <head>
     <!-- Basic metas
     ======================================== -->

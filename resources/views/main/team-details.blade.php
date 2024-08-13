@@ -98,7 +98,7 @@
                 <div class="offcanvas__content">
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
-                            <a href="index.html">
+                            <a href="{{ url('/index') }}">
                                 <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -121,7 +121,7 @@
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="team-details.html">Main Street, Melbourne, Australia</a>
+                                    <a target="_blank" href="{{ url('/team-details') }}">Main Street, Melbourne, Australia</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -129,8 +129,8 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="mailto:info@example.com"><span
-                                            class="mailto:info@example.com">info@example.com</span></a>
+                                    <a href="mailto:bookstoreaptech@example.com"><span
+                                            class="mailto:bookstoreaptech@example.com">bookstoreaptech@example.com</span></a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -138,7 +138,7 @@
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="team-details.html">Mod-friday, 09am -05pm</a>
+                                    <a target="_blank" href="{{ url('/team-details') }}">Mod-friday, 09am -05pm</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -151,7 +151,7 @@
                             </li>
                         </ul>
                         <div class="header-button mt-4">
-                            <a href="contact.html" class="theme-btn text-center">
+                            <a href="{{ url('/contact') }}" class="theme-btn text-center">
                                 Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
                         </div>
@@ -174,11 +174,11 @@
                 <ul class="contact-list">
                     <li>
                         <i class="fa-regular fa-phone"></i>
-                        <a href="tel:+20866660112">+208-6666-0112</a>
+                        <a href="tel:0986.999.888">0986.999.888</a>
                     </li>
                     <li>
                         <i class="far fa-envelope"></i>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="mailto:bookstoreaptech@example.com">bookstoreaptech@example.com</a>
                     </li>
                     <li>
                         <i class="far fa-clock"></i>
@@ -186,7 +186,7 @@
                     </li>
                 </ul>
                 <ul class="list">
-                    <li><i class="fa-light fa-comments"></i><a href="contact.html">Live Chat</a></li>
+                    <li><i class="fa-light fa-comments"></i><a href="{{ url('/contact') }}">Live Chat</a></li>
                     <li><i class="fa-light fa-user"></i>
                         <button data-bs-toggle="modal" data-bs-target="#loginModal">
                             Login
@@ -206,7 +206,7 @@
                         <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="index.html" class="header-logo">
+                                    <a href="{{ url('/index') }}" class="header-logo">
                                         <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                     </a>
                                 </div>
@@ -215,63 +215,63 @@
                                         <nav>
                                             <ul>
                                                 <li>
-                                                    <a href="index.html">
+                                                    <a href="{{ url('/index') }}">
                                                         Home
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="index.html">Home 01</a></li>
-                                                        <li><a href="index-2.html">Home 02</a></li>
+                                                        <li><a href="{{ url('/index') }}">Home 01</a></li>
+                                                        <li><a href="{{ url('/index-2') }}">Home 02</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="shop-details.html">
+                                                    <a href="{{ url('/shop-details') }}">
                                                         Shop
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="shop.html">Shop Default</a></li>
-                                                        <li><a href="shop-list.html">Shop List</a></li>
-                                                        <li><a href="shop-details.html">Shop Details</a></li>
-                                                        <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                        <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                        <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+                                                        <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
+                                                        <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
+                                                        <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
+                                                        <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="has-dropdown">
-                                                    <a href="about.html">
+                                                    <a href="{{ url('/about') }}">
                                                         Pages
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="about.html">About Us</a></li>
+                                                        <li><a href="{{ url('/about') }}">About Us</a></li>
                                                         <li class="has-dropdown">
-                                                            <a href="team-details.html">
+                                                            <a href="{{ url('/team-details') }}">
                                                                 Author
                                                                 <i class="fas fa-angle-down"></i>
                                                             </a>
                                                             <ul class="submenu">
-                                                                <li><a href="team.html">Author</a></li>
-                                                                <li><a href="team-details.html">Author Profile</a></li>
+                                                                <li><a href="{{ url('/team') }}">Author</a></li>
+                                                                <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="faq.html">Faq's</a></li>
-                                                        <li><a href="404.html">404 Page</a></li>
+                                                        <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                        <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="news.html">
+                                                    <a href="{{ url('/news') }}">
                                                         Blog
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="news-grid.html">Blog Grid</a></li>
-                                                        <li><a href="news.html">Blog List</a></li>
-                                                        <li><a href="news-details.html">Blog Details</a></li>
+                                                        <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
+                                                        <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                        <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="contact.html">Contact</a>
+                                                    <a href="{{ url('/contact') }}">Contact</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -312,10 +312,10 @@
                                     </form>
                                 </div>
                                 <div class="menu-cart">
-                                    <a href="wishlist.html" class="cart-icon">
+                                    <a href="{{ url('/wishlist') }}" class="cart-icon">
                                         <i class="fa-regular fa-heart"></i>
                                     </a>
-                                    <a href="shop-cart.html" class="cart-icon">
+                                    <a href="{{ url('/shop-cart') }}" class="cart-icon">
                                         <i class="fa-regular fa-cart-shopping"></i>
                                     </a>
                                     <div class="header-humbager ml-30">
@@ -345,7 +345,7 @@
                         <div class="col-6 col-md-6 col-lg-10 col-xl-8 col-xxl-10">
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="index.html" class="header-logo">
+                                    <a href="{{ url('/index') }}" class="header-logo">
                                         <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                     </a>
                                 </div>
@@ -354,63 +354,63 @@
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li>
-                                                    <a href="index.html">
+                                                    <a href="{{ url('/index') }}">
                                                         Home
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="index.html">Home 01</a></li>
-                                                        <li><a href="index-2.html">Home 02</a></li>
+                                                        <li><a href="{{ url('/index') }}">Home 01</a></li>
+                                                        <li><a href="{{ url('/index-2') }}">Home 02</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="shop-details.html">
+                                                    <a href="{{ url('/shop-details') }}">
                                                         Shop
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="shop.html">Shop Default</a></li>
-                                                        <li><a href="shop-list.html">Shop List</a></li>
-                                                        <li><a href="shop-details.html">Shop Details</a></li>
-                                                        <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                        <li><a href="{{ url('/shop') }}">Shop Default</a></li>
+                                                        <li><a href="{{ url('/shop-list') }}">Shop List</a></li>
+                                                        <li><a href="{{ url('/shop-details') }}">Shop Details</a></li>
+                                                        <li><a href="{{ url('/shop-cart') }}">Shop Cart</a></li>
+                                                        <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
+                                                        <li><a href="{{ url('/checkout') }}">Checkout</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="has-dropdown">
-                                                    <a href="about.html">
+                                                    <a href="{{ url('/about') }}">
                                                         Pages
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="about.html">About Us</a></li>
+                                                        <li><a href="{{ url('/about') }}">About Us</a></li>
                                                         <li class="has-dropdown">
-                                                            <a href="team-details.html">
+                                                            <a href="{{ url('/team-details') }}">
                                                                 Author
                                                                 <i class="fas fa-angle-down"></i>
                                                             </a>
                                                             <ul class="submenu">
-                                                                <li><a href="team.html">Author</a></li>
-                                                                <li><a href="team-details.html">Author Profile</a></li>
+                                                                <li><a href="{{ url('/team') }}">Author</a></li>
+                                                                <li><a href="{{ url('/team-details') }}">Author Profile</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="faq.html">Faq's</a></li>
-                                                        <li><a href="404.html">404 Page</a></li>
+                                                        <li><a href="{{ url('/faq') }}">Faq's</a></li>
+                                                        <li><a href="{{ url('/404') }}">404 Page</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="news.html">
+                                                    <a href="{{ url('/news') }}">
                                                         Blog
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="news-grid.html">Blog Grid</a></li>
-                                                        <li><a href="news.html">Blog List</a></li>
-                                                        <li><a href="news-details.html">Blog Details</a></li>
+                                                        <li><a href="{{ url('/news-grid') }}">Blog Grid</a></li>
+                                                        <li><a href="{{ url('/news') }}">Blog List</a></li>
+                                                        <li><a href="{{ url('/news-details') }}">Blog Details</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="contact.html">Contact</a>
+                                                    <a href="{{ url('/contact') }}">Contact</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -451,10 +451,10 @@
                                     </form>
                                 </div>
                                 <div class="menu-cart">
-                                    <a href="wishlist.html" class="cart-icon">
+                                    <a href="{{ url('/wishlist') }}" class="cart-icon">
                                         <i class="fa-regular fa-heart"></i>
                                     </a>
-                                    <a href="shop-cart.html" class="cart-icon">
+                                    <a href="{{ url('/shop-cart') }}" class="cart-icon">
                                         <i class="fa-regular fa-cart-shopping"></i>
                                     </a>
                                     <div class="header-humbager ml-30">
@@ -494,10 +494,10 @@
                                         id="saveForNext">
                                     <label for="saveForNext">Remember me</label>
                                 </div>
-                                <div class="text"> <a href="index-2.html">Forgot Your password?</a> </div>
+                                <div class="text"> <a href="{{ url('/index-2') }}">Forgot Your password?</a> </div>
                             </div>
                             <div class="loginBtn">
-                                <a href="index-2.html" class="theme-btn rounded-0"> Log in </a>
+                                <a href="{{ url('/index-2') }}" class="theme-btn rounded-0"> Log in </a>
                             </div>
                             <div class="orting-badge">
                                 Or
@@ -562,10 +562,10 @@
                                         id="rememberMe">
                                     <label for="rememberMe">Remember me</label>
                                 </div>
-                                <div class="text"> <a href="index-2.html">Forgot Your password?</a> </div>
+                                <div class="text"> <a href="{{ url('/index-2') }}">Forgot Your password?</a> </div>
                             </div>
                             <div class="loginBtn">
-                                <a href="index-2.html" class="theme-btn rounded-0"> Log in </a>
+                                <a href="{{ url('/index-2') }}" class="theme-btn rounded-0"> Log in </a>
                             </div>
                             <div class="orting-badge">
                                 Or
@@ -620,7 +620,7 @@
                 <div class="page-header">
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
                         <li>
-                            <a href="index.html">
+                            <a href="{{ url('/index') }}">
                                 Home
                             </a>
                         </li>
@@ -700,27 +700,27 @@
                                 </ul>
                                 <ul class="shop-icon d-grid justify-content-center align-items-center">
                                     <li>
-                                        <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                     </li>
                                 </ul>
                                 <ul class="shop-icon d-grid justify-content-center align-items-center">
                                     <li>
-                                        <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="shop-cart.html">
+                                        <a href="{{ url('/shop-cart') }}">
 
                                             <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
+                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="shop-content">
                                 <h5> Design Low Book </h5>
-                                <h3><a href="shop-details.html">Simple Things You To <br> Save BOOK</a></h3>
+                                <h3><a href="{{ url('/shop-details') }}">Simple Things You To <br> Save BOOK</a></h3>
                                 <ul class="price-list">
                                     <li>$30.00</li>
                                     <li>
@@ -745,7 +745,7 @@
                                 </ul>
                             </div>
                             <div class="shop-button">
-                                <a href="shop-details.html" class="theme-btn"><i
+                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
                                         class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
                             </div>
                         </div>
@@ -756,22 +756,22 @@
                                 <a href="shop-details"><img src="assets/img/book/02.png" alt="img"></a>
                                 <ul class="shop-icon d-grid justify-content-center align-items-center">
                                     <li>
-                                        <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="shop-cart.html">
+                                        <a href="{{ url('/shop-cart') }}">
 
                                             <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
+                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="shop-content">
                                 <h5> Design Low Book </h5>
-                                <h3><a href="shop-details.html">How Deal With Very <br> Bad BOOK</a></h3>
+                                <h3><a href="{{ url('/shop-details') }}">How Deal With Very <br> Bad BOOK</a></h3>
                                 <ul class="price-list">
                                     <li>$30.00</li>
                                     <li>
@@ -796,7 +796,7 @@
                                 </ul>
                             </div>
                             <div class="shop-button">
-                                <a href="shop-details.html" class="theme-btn"><i
+                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
                                         class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
                             </div>
                         </div>
@@ -807,22 +807,22 @@
                                 <a href="shop-details"><img src="assets/img/book/03.png" alt="img"></a>
                                 <ul class="shop-icon d-grid justify-content-center align-items-center">
                                     <li>
-                                        <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="shop-cart.html">
+                                        <a href="{{ url('/shop-cart') }}">
 
                                             <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
+                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="shop-content">
                                 <h5> Design Low Book </h5>
-                                <h3><a href="shop-details.html">Qple GPad With Retina <br> Sisplay</a></h3>
+                                <h3><a href="{{ url('/shop-details') }}">Qple GPad With Retina <br> Sisplay</a></h3>
                                 <ul class="price-list">
                                     <li>$30.00</li>
                                     <li>
@@ -847,7 +847,7 @@
                                 </ul>
                             </div>
                             <div class="shop-button">
-                                <a href="shop-details.html" class="theme-btn"><i
+                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
                                         class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
                             </div>
                         </div>
@@ -863,22 +863,22 @@
                                 </ul>
                                 <ul class="shop-icon d-grid justify-content-center align-items-center">
                                     <li>
-                                        <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="shop-cart.html">
+                                        <a href="{{ url('/shop-cart') }}">
 
                                             <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
+                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="shop-content">
                                 <h5> Design Low Book </h5>
-                                <h3><a href="shop-details.html">Qple GPad With Retina <br> Sisplay</a></h3>
+                                <h3><a href="{{ url('/shop-details') }}">Qple GPad With Retina <br> Sisplay</a></h3>
                                 <ul class="price-list">
                                     <li>$30.00</li>
                                     <li>
@@ -903,7 +903,7 @@
                                 </ul>
                             </div>
                             <div class="shop-button">
-                                <a href="shop-details.html" class="theme-btn"><i
+                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
                                         class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
                             </div>
                         </div>
@@ -914,22 +914,22 @@
                                 <a href="shop-details"><img src="assets/img/book/05.png" alt="img"></a>
                                 <ul class="shop-icon d-grid justify-content-center align-items-center">
                                     <li>
-                                        <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                        <a href="{{ url('/shop-cart') }}"><i class="far fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="shop-cart.html">
+                                        <a href="{{ url('/shop-cart') }}">
 
                                             <img class="icon" src="assets/img/icon/shuffle.svg" alt="svg-icon">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="shop-details.html"><i class="far fa-eye"></i></a>
+                                        <a href="{{ url('/shop-details') }}"><i class="far fa-eye"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="shop-content">
                                 <h5> Design Low Book </h5>
-                                <h3><a href="shop-details.html">Simple Things You To <br> Save BOOK</a></h3>
+                                <h3><a href="{{ url('/shop-details') }}">Simple Things You To <br> Save BOOK</a></h3>
                                 <ul class="price-list">
                                     <li>$30.00</li>
                                     <li>
@@ -954,7 +954,7 @@
                                 </ul>
                             </div>
                             <div class="shop-button">
-                                <a href="shop-details.html" class="theme-btn"><i
+                                <a href="{{ url('/shop-details') }}" class="theme-btn"><i
                                         class="fa-solid fa-basket-shopping"></i> Add To Cart</a>
                             </div>
                         </div>
@@ -975,7 +975,7 @@
                     <div class="content">
                         <p>Call Us 7/24</p>
                         <h3>
-                            <a href="tel:+2085550112">+208-555-0112</a>
+                            <a href="tel:0986.999.888">0986.999.888</a>
                         </h3>
                     </div>
                 </div>
@@ -986,7 +986,7 @@
                     <div class="content">
                         <p>Make a Quote</p>
                         <h3>
-                            <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            <a href="mailto:bookstoreaptech@gmail.com">bookstoreaptech@gmail.com</a>
                         </h3>
                     </div>
                 </div>
@@ -1008,7 +1008,7 @@
                     <div class="content">
                         <p>Location</p>
                         <h3>
-                            4517 Washington ave.
+                            8 Tôn Thất Thuyết - Mỹ Đình, Cầu Giấy, Hà Nội
                         </h3>
                     </div>
                 </div>
@@ -1023,7 +1023,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="single-footer-widget">
                             <div class="widget-head">
-                                <a href="index.html">
+                                <a href="{{ url('/index') }}">
                                     <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                                 </a>
                             </div>
@@ -1048,25 +1048,25 @@
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="shop.html">
+                                    <a href="{{ url('/shop') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Store List
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="{{ url('/contact') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Opening Hours
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="{{ url('/contact') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Contact Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="{{ url('/contact') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Return Policy
                                     </a>
@@ -1081,25 +1081,25 @@
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="shop.html">
+                                    <a href="{{ url('/shop') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Novel Books
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="shop.html">
+                                    <a href="{{ url('/shop') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Poetry Books
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="{{ url('/contact') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         Political Books
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="{{ url('/contact') }}">
                                         <i class="fa-solid fa-chevrons-right"></i>
                                         History Books
                                     </a>
@@ -1130,26 +1130,26 @@
             <div class="container">
                 <div class="footer-wrapper d-flex align-items-center justify-content-between">
                     <p class="wow fadeInLeft" data-wow-delay=".3s">
-                        © All Copyright 2024 by <a href="index.html">Bookle</a>
+                        © All Copyright 2024 by <a href="{{ url('/index') }}">Bookle</a>
                     </p>
                     <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                         <li>
-                            <a href="contact.html">
+                            <a href="{{ url('/contact') }}">
                                 <img src="assets/img/visa-logo.png" alt="img">
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <a href="{{ url('/contact') }}">
                                 <img src="assets/img/mastercard.png" alt="img">
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <a href="{{ url('/contact') }}">
                                 <img src="assets/img/payoneer.png" alt="img">
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <a href="{{ url('/contact') }}">
                                 <img src="assets/img/affirm.png" alt="img">
                             </a>
                         </li>
